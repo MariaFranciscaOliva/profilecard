@@ -703,6 +703,35 @@ __webpack_require__.r(__webpack_exports__);
 function render(variables = {}) {
   console.log(variables);
   console.log(variables.name);
+  if (variables.name == null) {
+    variables.name = "Carla";
+  }
+  if (variables.lastname == null) {
+    variables.lastname = "Castro";
+  }
+  if (variables.twitter == null) {
+    variables.twitter = "jaimevaina";
+  }
+  if (variables.instagram == null) {
+    variables.instagram = "jaimevaina";
+  }
+  /*for (var i = 0; i < variables.city.length; i++) {
+    if (variables.city[i] == null) {
+      //console.log(variables.city);
+      //console.log(variables.city[i]);
+      //console.log(variables.city[i].value);
+      variables.city[i] = "floor planner";
+    }
+  }*/
+  if (variables.role == null) {
+    variables.role = "floor planner";
+  }
+  if (variables.country == null) {
+    variables.country = "chile";
+  }
+  if (variables.city == null) {
+    variables.city = "santiago";
+  }
 
   // here we ask the logical questions to make decitions on how to build the heml
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
